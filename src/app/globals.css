@@ -84,6 +84,7 @@ body {
   color: #64748b;
   font-size: 0.95rem;
   margin-bottom: 0.25rem;
+<<<<<<< HEAD
 }
 
 .member-list {
@@ -113,4 +114,6 @@ body {
 
 .member-list small {
   color: #64748b;
+=======
+>>>>>>> e7cfd7a0fc4623c5b217362d166b4e2262b30de8
 }

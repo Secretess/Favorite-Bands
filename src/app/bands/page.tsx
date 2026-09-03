@@ -6,7 +6,7 @@ export default function FavoriteBandsPage() {
     <main className="page">
       <h1>วงดนตรีที่ชื่นชอบ (Favorite Bands)</h1>
 
-      <section className="bands-grid"> 
+      <section className="bands-grid">
         {bandsData.map((band) => (
           <BandCard key={band.id} band={band} />
         ))}

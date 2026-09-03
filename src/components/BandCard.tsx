@@ -21,10 +21,20 @@ export default function BandCard({ band }: BandCardProps) {
       <p className="genre">แนวเพลง: {band.genre}</p>
 
       <h3>สมาชิกในวง:</h3>
-      <ul>
+      <ul className="member-list">
         {band.members.map((member) => (
           <li key={member.id}>
-            <strong>{member.name}</strong> - {member.role}
+            <Image
+              src={member.image}
+              alt={member.name}
+              width={56}
+              height={56}
+              className="member-image"
+            />
+            <span>
+              <strong>{member.name}</strong>
+              <small>{member.role}</small>
+            </span>
           </li>
         ))}
       </ul>
